@@ -33,6 +33,12 @@ class TeamCityTest extends PHPUnit_Framework_TestCase
         $this->assertGreaterThanOrEqual(0, $value);
     }
 
+    public function testGetRandomInt2()
+    {
+        $value = $this->teamCity->getRandomInt();
+        $this->assertLessThanOrEqual(1000000, $value);
+    }
+
     public function testGetString()
     {
         $this->assertEquals('string', $this->teamCity->getString());
