@@ -18,4 +18,9 @@ class TeamCity
     {
         return mt_rand(0, 1000000);
     }
+
+    public function getString()
+    {
+        return 'string';
+    }
 }

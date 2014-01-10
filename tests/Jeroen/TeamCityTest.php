@@ -27,9 +27,14 @@ class TeamCityTest extends PHPUnit_Framework_TestCase
         $this->assertFalse($this->teamCity->getFalse());
     }
 
-    public function testRandomInt()
+    public function testGetRandomInt()
     {
         $value = $this->teamCity->getRandomInt();
         $this->assertGreaterThanOrEqual(0, $value);
+    }
+
+    public function testGetString()
+    {
+        $this->assertEquals('string', $this->teamCity->getString());
     }
 }
