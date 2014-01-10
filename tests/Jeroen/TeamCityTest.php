@@ -58,4 +58,9 @@ class TeamCityTest extends PHPUnit_Framework_TestCase
     {
         $this->assertStringStartsWith('str', $this->teamCity->getString());
     }
+
+    public function testGetString5()
+    {
+        $this->assertStringStartsWith('stri', $this->teamCity->getString());
+    }
 }
