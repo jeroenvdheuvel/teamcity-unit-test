@@ -42,5 +42,6 @@ class TeamCityTest extends PHPUnit_Framework_TestCase
     public function testGetString()
     {
         $this->assertEquals('string', $this->teamCity->getString());
+        $this->assertStringEndsWith('ng', $this->teamCity->getString());
     }
 }
