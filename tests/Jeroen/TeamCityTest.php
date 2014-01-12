@@ -25,7 +25,6 @@ class TeamCityTest extends PHPUnit_Framework_TestCase
     public function testFalse()
     {
         $this->assertFalse($this->teamCity->getFalse());
-        $this->assertNotNull($this->teamCity->getFalse());
     }
 
     public function testGetRandomInt()
@@ -63,5 +62,10 @@ class TeamCityTest extends PHPUnit_Framework_TestCase
     public function testGetString5()
     {
         $this->assertStringStartsWith('stri', $this->teamCity->getString());
+    }
+
+    public function testGetEmptyArray()
+    {
+        $this->assertEmpty($this->teamCity->getEmptyArray());
     }
 }
