@@ -71,6 +71,12 @@ class TeamCityTest extends PHPUnit_Framework_TestCase
 
     public function testGetArrayWithRandomIntsEmpty()
     {
-        $this->assertNotEmpty($this->teamCity->getArrayWithRandomInts(0));
+        $this->assertEmpty($this->teamCity->getArrayWithRandomInts(0));
     }
+
+//    public function testGetArrayWithRandomInts()
+//    {
+//        $values = $this->teamCity->getArrayWithRandomInts(2);
+//        $this->assertNotEmpty();
+//    }
 }
