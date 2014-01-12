@@ -23,4 +23,19 @@ class TeamCity
     {
         return 'string';
     }
+
+    public function getEmptyArray()
+    {
+        return array();
+    }
+
+    public function getArrayWithRandomInts($amount)
+    {
+        $array = array();
+        for ($i=0; $i<$amount; $i++) {
+            $array[] = $this->getRandomInt();
+        }
+
+        return $array;
+    }
 }
