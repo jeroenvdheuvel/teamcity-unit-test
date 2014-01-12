@@ -25,6 +25,7 @@ class TeamCityTest extends PHPUnit_Framework_TestCase
     public function testFalse()
     {
         $this->assertFalse($this->teamCity->getFalse());
+        $this->assertNotNull($this->teamCity->getFalse());
     }
 
     public function testGetRandomInt()
